@@ -80,9 +80,10 @@ main>div:nth-child(odd) {
     height: calc(100vh - (50px + 100px + 50px));
     width: 300px;
     background-color: #dcedc8;
-    /* verde muy suave */
+    /* verde muy suave para fondo*/
     float: left;
     text-align: center;
+    position: relative;
 }
 
 main>div:nth-child(odd)>img {
@@ -95,6 +96,15 @@ main>div:nth-child(odd)>p {
     color: #33691e;
     /* texto verde oscuro legible */
 }
+
+main>div:nth-child(odd)>a{
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+}
+
+
 
 main>div:nth-child(even) {
     height: calc(100vh - (50px + 100px + 50px));
