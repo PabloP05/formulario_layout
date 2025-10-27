@@ -74,6 +74,10 @@ nav>div {
     color: #1b5e20;
     font-weight: bold;
 }
+main{
+    display: flow-root;
+}
+
 
 /* Secciones del main */
 main>div:nth-child(odd) {
@@ -84,6 +88,7 @@ main>div:nth-child(odd) {
     float: left;
     text-align: center;
     position: relative;
+    display: flow-root;
 }
 
 main>div:nth-child(odd)>img {
