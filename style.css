@@ -33,7 +33,7 @@ nav {
 }
 
 main {
-    height: calc(100vh - (50px + 100px + 100px));
+    height: calc(100vh - (50px + 100px + 50px));
     width: 1600px;
     background-color: #a5d6a7;
     /* verde claro */
@@ -43,7 +43,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 1600px;
-    height: 100px;
+    height: 50px;
     background-color: #388e3c;
     /* verde medio-oscuro para equilibrio */
 }
@@ -77,7 +77,7 @@ nav>div {
 
 /* Secciones del main */
 main>div:nth-child(odd) {
-    height: calc(100vh - (50px + 100px + 100px));
+    height: calc(100vh - (50px + 100px + 50px));
     width: 300px;
     background-color: #dcedc8;
     /* verde muy suave */
@@ -97,7 +97,7 @@ main>div:nth-child(odd)>p {
 }
 
 main>div:nth-child(even) {
-    height: calc(100vh - (50px + 100px + 100px));
+    height: calc(100vh - (50px + 100px + 50px));
     width: calc(1600px - 300px);
     background-color: #a5d6a7;
     /* verde medio claro */
@@ -110,19 +110,19 @@ h3 {
 
 main>div:nth-child(even)>p {
     display: block;
-    width: 600px;
+    width: 1200px;
     margin: 10px 70px;
 }
 
 form{
     width: 420px;
-    height: 400px;
+    height: 310px;
     background-color: #66bb6a;
     position: relative;
     left: 350px;
-    top: 100px;
+    top: 10px;
     border-radius: 10px;
-    padding: 50px 40px;
+    padding: 20px 40px;
 }
 
 form>p{
