@@ -6,7 +6,7 @@
 
 /*     LAYOUT        */
 body {
-    width: 1600px;
+    width: 100%; /* 1600px origen */
     height: 100vh;
     position: relative;
     margin: 0 auto;
@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    width: 1600px;
+    width: 100%; /* 1600 es el maximo de pixeles del body */
     height: 100px;
     background-color: #2e7d32;
     /* verde oscuro elegante */
@@ -25,7 +25,7 @@ header {
 }
 
 nav {
-    width: 1600px;
+    width: 100%;
     height: 50px;
     background-color: #66bb6a;
     /* verde medio para destacar el menú */
@@ -34,15 +34,13 @@ nav {
 
 main {
     height: calc(100vh - (50px + 100px + 50px));
-    width: 1600px;
+    width: 100%;
     background-color: #a5d6a7;
     /* verde claro */
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 1600px;
+    width: 100%;
     height: 50px;
     background-color: #388e3c;
     /* verde medio-oscuro para equilibrio */
@@ -51,23 +49,23 @@ footer {
 /*  CONTENIDOS  */
 
 header>img {
-    width: 100px;
+    width:6.25%; /* 1600px es 100% 100px es 10% */
     position: absolute;
     left: 0;
 }
 
 header>h1 {
-    font-size: 80px;
+    font-size: 5em ;
     color: #e8f5e9;
     /* texto blanco verdoso */
 }
 
 nav>div {
     float: left;
-    width: 150px;
+    width: 9.375%;/*1600 es a 100% como 150 es a */
     height: 20px;
-    padding: 10px 25px;
-    margin: 5px 60px;
+    padding: 0.625% 1.5625%; /*1600 es a 100% como 10 es a 0.625% y 25 es a 1.5625%*/
+    margin: 0.3125% 3.75%; /*1600 es a 100% como 5 es a 0,3125 y 60 es  */
     background-color: #c8e6c9;
     /* verde pálido para contraste */
     border-radius: 10px;
@@ -82,7 +80,7 @@ main{
 /* Secciones del main */
 main>div:nth-child(odd) {
     height: calc(100vh - (50px + 100px + 50px));
-    width: 300px;
+    width: 18.75%; /* 1600 es a 100% como 300 es 18.75 */
     background-color: #dcedc8;
     /* verde muy suave para fondo*/
     float: left;
@@ -92,12 +90,12 @@ main>div:nth-child(odd) {
 }
 
 main>div:nth-child(odd)>img {
-    width: 290px;
-    margin: 20px 5px;
+    width: 96.66666666666667%; /*300 es a 100% como 290 es 96.66666666666667*/
+    margin: 6.666666666666667% 1.666666666666667%; /* 300 es a 100% como 20px es 6.666666666666667 y 5px es  1.666666666666667*/
 }
 
 main>div:nth-child(odd)>p {
-    padding: 10px;
+    padding: 3.333333333333333%; /* 300px es a 100 como 10px es a 3.333333333333333 */
     color: #33691e;
     /* texto verde oscuro legible */
 }
@@ -105,62 +103,62 @@ main>div:nth-child(odd)>p {
 main>div:nth-child(odd)>a{
     display: block;
     position: absolute;
-    left: 20px;
-    bottom: 5px;
+    left: 6.666666666666667%; /* 300px es a 100 20 es  */
+    bottom: 1.666666666666667%; /* 300px es a 100 como 5 es a 1.666666666666667 */
 }
 
 
 
 main>div:nth-child(even) {
     height: calc(100vh - (50px + 100px + 50px));
-    width: calc(1600px - 300px);
+    width: 81.25%; /* 1600 es 100 como 1300 es 81.25 */
     background-color: #a5d6a7;
     /* verde medio claro */
     float: left;
 } 
 
-h3 {
-    margin: 20px 50px;
+main>div:nth-child(even)>h3 {
+    margin: 1.538461538461538% 3.846153846153846%; /*1300 es a 100 como 20 es a  1.538461538461538 y 50 es 3.846153846153846*/
 }
 
 main>div:nth-child(even)>p {
     display: block;
-    width: 1200px;
-    margin: 10px 70px;
+    width: 92.30769230769231%; /* 1300 es a 100 como 1200 es  92.30769230769231*/
+    margin: 0.7692307692307692% 5.384615384615385%; /* 1300 es 100 como 10 es 0.7692307692307692 y 70 es 5.384615384615385*/
 }
 
 form{
-    width: 420px;
+    width: 30.76923076923077%; /* 1300 es a 100 como 400 es 30.76923076923077 */
     height: 310px;
     background-color: #66bb6a;
     position: relative;
-    left: 350px;
-    top: 10px;
+    left: 26.92307692307692%; /* 1300 es a 100 como 350 es 26.92307692307692 */
+    top: 0.7692307692307692%; /* 1300 es a 100 como 10 es a  0.7692307692307692*/
     border-radius: 10px;
-    padding: 20px 40px;
+    padding: 1.538461538461538% 3.076923076923077%; /* 1300 es a 100 como 20 es 1.538461538461538 y 40px es a  3.076923076923077*/
 }
 
 form>p{
-   font-size: 30px;
+   font-size: 2em;
     
 }
 label{
     display: block;
-    margin: 10px 0;
+    margin: 2.5% 0; /* 400 es a 100 como 10 es 2.5 */
 }
 input[type="text"]{
-    padding: 0 10px;
+    padding: 0 2.5%;/* 400 es a 100 como 10 es 2.5 */
 }
 
 input[type="password"]{
-    padding: 0 10px;
+    padding: 0 2.5%;/* 400 es a 100 como 10 es 2.5 */
 }
 
 select{
-    width: 200px;
+    width: 50%; /* 400 es a 100 como 200 es 50 */
 }
 input[type="checkbox"]{
-    margin: 20px 0;
+    margin: 5% 0;/* 400 es a 100 como 20 es 5 */
 }
 
 .terminos{
@@ -168,7 +166,7 @@ input[type="checkbox"]{
 }
 
 input[type="submit"]{
-    width: 400px;
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     border: 0;
