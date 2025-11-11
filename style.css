@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap'); /* letras importadas con css */
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +6,7 @@
 
 /*     LAYOUT        */
 body {
-    width: 100%; /* 1600px origen */
+    width: 100%; /* 1600px origen solo mantenerlo en la fase de pruebas */
     height: 100vh;
     position: relative;
     margin: 0 auto;
@@ -170,4 +170,6 @@ input[type="submit"]{
     height: 50px;
     border-radius: 5px;
     border: 0;
+    
 }
+
