@@ -6,7 +6,7 @@
 
 /*     LAYOUT        */
 body {
-    width: 100%; /* 1600px origen solo mantenerlo en la fase de pruebas */
+    width: 1600px; /* 1600px origen solo mantenerlo en la fase de pruebas */
     height: 100vh;
     position: relative;
     margin: 0 auto;
